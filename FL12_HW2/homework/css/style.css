@@ -1,0 +1,29 @@
+/*
+
+write your code here
+
+*/
+.tm-nav-item :hover{
+  background-color: lightskyblue;
+  color:#fff;
+}
+.tm-main-nav {
+  box-shadow: 0px 5px 5px 0px rgba(0,0,0,0.3);
+}
+
+.tm-banner-text{
+  text-shadow: 3px 5px 2px #333;
+  
+}
+@keyframes tm-banner-text {
+  
+}
+  
+
+.tm-banner{
+  background:linear-gradient(to right, rgba(135,206,250,0.9) 0%, rgba(135,206,250,0.9) 0%, rgba(176,196,196,1) 47%, rgba(222,184,135,1) 100%);
+  border-radius: 5px;
+}
+.tm-banner-inner{
+  background: #fff;
+}
