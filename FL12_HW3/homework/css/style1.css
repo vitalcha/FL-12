@@ -1,0 +1,135 @@
+@charset "UTF-8";
+.header {
+  background: url(../img/m-h-day.jpg); }
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box; }
+
+​ img {
+  display: block;
+  height: auto; }
+
+.body,
+section {
+  width: 1920px;
+  background-color: grey; }
+
+.header {
+  width: 1920px;
+  background: url(../img/m-h-day.jpg) center no-repeat;
+  height: 724px;
+  background-size: cover;
+  border-top-left-radius: 0% 100%;
+  border-top-right-radius: 0% 60%;
+  border-bottom-right-radius: 40%;
+  border-bottom-left-radius: 50% 0%; }
+
+.header-wrap {
+  padding-left: 190px; }
+
+.landing-logo {
+  display: flex;
+  align-items: center;
+  padding-top: 20px;
+  margin-bottom: 72px; }
+
+.span {
+  display: block; }
+
+#p text {
+  font-size: 40px; }
+
+.header_heading {
+  font-size: 72px;
+  line-height: 72px;
+  color: #000000;
+  font-family: "Source Sans Pro", sans-serif;
+  font-weight: 800;
+  height: 140px;
+  width: 490px;
+  margin-bottom: 44px;
+  position: relative; }
+
+.header_heading::after {
+  content: "";
+  background-color: rgba(0, 0, 255, 0.404);
+  height: 50px;
+  width: 300px;
+  position: absolute;
+  top: 90px;
+  right: 190px; }
+
+.header_text {
+  font-size: 16px;
+  width: 660px;
+  height: 90px;
+  font-family: "Source Sans Pro", sans-serif;
+  white-space: pre-line;
+  margin-bottom: 88px; }
+
+.header_button {
+  width: 142px;
+  height: 48px;
+  background: #699900;
+  border: none;
+  border-radius: 3px;
+  color: white; }
+
+.login {
+  padding-left: 148px;
+  color: white; }
+
+.section_text {
+  width: 1920px;
+  text-align: center;
+  font-size: 43px;
+  font-weight: 600;
+  color: #000000;
+  font-family: "Source Sans Pro", sans-serif;
+  white-space: pre-line;
+  position: relative; }
+
+.section_text::after {
+  content: "";
+  background-color: rgba(0, 0, 255, 0.404);
+  height: 50px;
+  width: 190px;
+  position: absolute;
+  top: 48px;
+  left: 970px; }
+
+.section_card_wrap {
+  width: 1120px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center; }
+
+.footer {
+  width: 1920px;
+  height: 240px;
+  background: #525d5f; }
+
+.footer-wrap {
+  padding-left: 190px;
+  padding-right: 190px;
+  display: inline-flex; }
+
+.footer_logo {
+  display: flex;
+  margin: 0 auto;
+  vertical-align: baseline; }
+
+.footer_text {
+  display: flex;
+  flex-direction: column;
+  text-align: center;
+  height: 60px;
+  width: 290px;
+  vertical-align: baseline; }
+
+.footer-cr {
+  display: flex;
+  text-align: center;
+  justify-content: left; }
