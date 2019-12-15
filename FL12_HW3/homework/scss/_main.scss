@@ -1,29 +1,36 @@
-// Write your styles here
 * {
   margin: 0;
   padding: 0;
   box-sizing: border-box;
 }
-​ img {
-  display: block;
-  // max-width: 100%;
-  height: auto;
+
+$sans: "Source Sans Pro", sans-serif;
+$hind: "Hind", sans-serif;
+$fresca: "Fresca", sans-serif;
+$font-family: (
+  sans: $sans,
+  hind: $hind,
+  fresca: $fresca
+);
+
+
+.body {
+  margin: 0;
+  padding: 0;
+  font-family: map-get($font-family, hind);
+  color: $color-font;
+  background-color: $bg-color;
+  box-sizing: border-box;
 }
-.body,
-.main > section {
-  width: 1920px;
-  background: grey;
-}
+
 .header {
   width: 1920px;
-  background: $image center no-repeat;
+  background: $image-header center no-repeat;
   height: 724px;
   background-size: cover;
-  // border-top-left-radius: 0% 100%;
-  // border-top-right-radius: 0% 60%;
   border-bottom-right-radius: 40%;
-  // border-bottom-left-radius: 50% 0%;
 }
+
 .header-wrap {
   padding-left: 190px;
 }
@@ -33,31 +40,23 @@
   font-family: "Source Sans Pro", sans-serif;
   font-size: 24px;
   line-height: 24px;
-  // margin-left: 12px;
-  font-weight: normal;
+  font-weight: 600;
 }
 .landing-logo > p > span {
   display: flex;
   flex-direction: column;
-  font-size: 14px;
+  font-size: 10px;
+  font-weight: 400;
   font-family: "Source Sans Pro", sans-serif;
   width: 100px;
 }
 
 .landing-logo {
-  // margin-left: 190px;
   display: flex;
-  // align-items: center;
-  padding-top: 20px;
+  padding-top: 22px;
   margin-bottom: 72px;
 }
-// .span {
-//   display: block;
-//   // width: 90px;height: 50px;
-// }
-// #p text {
-//   font-size: 40px;
-// }
+
 .header_heading {
   font-size: 72px;
   line-height: 72px;
@@ -66,26 +65,24 @@
   font-weight: 800;
   height: 140px;
   width: 490px;
-  margin-bottom: 44px;
+  margin-bottom: 40px;
   position: relative;
-  // white-space: pre-line;
 }
 .header_heading::after {
   content: "";
   background-color: rgba(0, 0, 255, 0.404);
   height: 50px;
   width: 300px;
-
   position: absolute;
-  top: 90px;
+  top: 91px;
   right: 190px;
 }
 
 .header_text {
   font-size: 16px;
   width: 660px;
-  height: 90px;
-  font-family: "Source Sans Pro", sans-serif;
+  height: 93px;
+  font-family: "Hind", sans-serif;
   white-space: pre-line;
   margin-bottom: 88px;
 }
@@ -120,7 +117,7 @@
   font-family: "Source Sans Pro", sans-serif;
   white-space: pre-line;
   position: relative;
-  margin-bottom: 20px;
+  margin-bottom: 30px;
 }
 .section_text::after {
   content: "";
@@ -130,53 +127,62 @@
 
   position: absolute;
   top: 32px;
-  left: 970px;
+  left: 968px;
 }
 .section_card_wrap {
   margin: 0 auto;
   width: 1120px;
   display: flex;
   flex-direction: column;
-  margin-bottom: 130px;
-  // justify-content: center;
+  margin-bottom: 75px;
+  margin-left: 384px;
 }
 .section_card {
   display: flex;
   flex-direction: row;
   width: 1120px;
   margin: 12px;
+  background: #85868c;
+  border-radius: 5px;
 }
 .section_card_img {
   width: 100%;
-  // height: 280px;
   border-radius: 5px;
+  padding: 20px;
 }
 .section_card_right_container {
   display: flex;
   flex-direction: column;
+  padding: 20px;
 }
 .section_card_heading {
   text-align: center;
   font-size: 26px;
   line-height: 26px;
-  font-weight: 700;
+  font-weight: 800;
   color: #000000;
   font-family: "Source Sans Pro", sans-serif;
+  padding-top: 40px;
+  padding-bottom: 25px;
 }
 .section_card_text {
-  font-size: 18px;
-  line-height: 18px;
   font-weight: 400;
   color: #000000;
-  font-family: "Source Sans Pro", sans-serif;
+  font-family: "Hind", sans-serif;
+  text-align: justify;
+  padding: 0px 75px 50px 75px;
+}
+.section_link {
+  color: white;
+  text-align: center;
 }
 .section_banner {
-  margin: 0 auto;
+  margin-left: 360px;
   width: 1200px;
-  display: flex;
   background: linear-gradient(to right, #679707, #305ed1);
   height: 140px;
-  border-radius: 5px ;
+  border-radius: 5px;
+  transform: translateY(73px);
 }
 .section_banner_button {
   width: 142px;
@@ -190,31 +196,35 @@
   border: none;
   border-radius: 3px;
   color: white;
+  position: absolute;
+  left: 895px;
+  top: 48px;
 }
-.section_banner_heading{
+.section_banner_heading {
   font-size: 28px;
   line-height: 28px;
   font-weight: 800;
   color: #000000;
-  font-family: "Hind", sans-serif;
+  font-family: "Source Sans Pro", sans-serif;
   white-space: pre-line;
   position: relative;
-  transform: translateY(75);
+  margin-left: 160px;
 }
-.section_banner_heading::after{
+.section_banner_heading::after {
   content: "";
   background-color: rgba(0, 0, 255, 0.404);
   height: 50px;
   width: 64px;
   position: absolute;
-  top: 32px;
-  left: 970px;
-
+  top: 10px;
+  left: 112px;
 }
-.section_banner_text{
- font-size: 16px;
-  color:#c0c0b8;
+.section_banner_text {
+  font-size: 16px;
+  color: #c0c0b8;
   font-family: "Hind", sans-serif;
+  margin-left: 160px;
+  margin-top: 18px;
 }
 
 .footer {
@@ -223,32 +233,40 @@
   background: #525d5f;
 }
 .footer-wrap {
-  padding-left: 190px;
-  padding-right: 190px;
-  display: inline-flex;
+  padding-top: 100px;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-around;
 }
 .footer_logo {
-  display: flex;
-  // padding-top: 130px;
-  margin: 0 auto;
-  vertical-align: baseline;
+  margin-top: 18px;
+  margin-bottom: 0;
+  margin-left: -32px;
 }
-.footer_text {
-  // width: 290px;
-  // display: block;
-  // height: 60px;
-  // margin-left: 700px;
+.footer_logo > p {
+  width: 100px;
+  text-align: center;
+  font-family: "Source Sans Pro", sans-serif;
+  font-size: 24px;
+  line-height: 24px;
+  font-weight: 600;
+}
+.footer_logo > p > span {
   display: flex;
   flex-direction: column;
-  text-align: center;
-  height: 60px;
-  width: 290px;
-
-  vertical-align: baseline;
+  font-size: 10px;
+  font-weight: 400;
+  font-family: "Source Sans Pro", sans-serif;
+  width: 100px;
+}
+.footer_text {
+  font-family: "Source Sans Pro", sans-serif;
+  font-size: 16px;
+  font-weight: 400;
+  width: 300px;
+  padding-top: 25px;
 }
 .footer-cr {
-  display: flex;
-  // flex-direction: column;
-  text-align: center;
-  justify-content: left;
+  align-self: center;
+  font-family: "Source Sans Pro", sans-serif;
 }
