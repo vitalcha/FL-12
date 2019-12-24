@@ -3,9 +3,7 @@ let sideA = prompt('Please enter length of triangles side A', ''),
   sideB = prompt('Please enter length of triangles side B', ''),
   sideC = prompt('Please enter length of triangles side C', '');
 if (
-  sideA === '' || sideA === null || sideA === undefined ||
-  sideB === '' || sideB === null || sideB === undefined ||
-  sideC === '' || sideC === null || sideC === undefined
+  sideA === '' || isNaN(sideA) || sideB === '' || isNaN(sideB) || sideC === '' || isNaN(sideC)
 ) {
   alert('input values should be ONLY numbers')
 } else {
@@ -13,7 +11,7 @@ if (
   const b = parseInt(sideB)
   const c = parseInt(sideC)
 
-  if (a === 0 || b === 0 || c === 0) {
+  if (a <= 0 || b <= 0 || c <= 0) {
     alert('A triangle must have 3 sides with a positive definite length')
   } else if (a + b <= c || a + c <= b || b + c <= a) {
     alert("Triangle doesn't exist")
