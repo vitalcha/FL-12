@@ -1,7 +1,6 @@
-// 'use strict'
-let sideA = prompt('Please enter length of triangles side A', ''),
-  sideB = prompt('Please enter length of triangles side B', ''),
-  sideC = prompt('Please enter length of triangles side C', '');
+let sideA = parseFloat(prompt('Please enter length of triangles side A', '')),
+  sideB = parseFloat(prompt('Please enter length of triangles side B', '')),
+  sideC = parseFloat(prompt('Please enter length of triangles side C', ''));
 if (
   sideA === '' || isNaN(sideA) || sideB === '' || isNaN(sideB) || sideC === '' || isNaN(sideC)
 ) {
