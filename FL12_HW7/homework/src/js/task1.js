@@ -14,8 +14,8 @@ if (mailInput === '' || mailInput === null) {
   let inputPassword = prompt('Please enter your password');
   if (inputPassword === '' || inputPassword === null) {
     alert('Verification canceled.');
-  } else if (mailInput === userEmail && inputPassword === 'UserPass'
-    || mailInput === adminEmail && inputPassword === 'AdminPass') {
+  } else if (mailInput === userEmail && inputPassword === 'UserPass' ||
+    mailInput === adminEmail && inputPassword === 'AdminPass') {
     let isPasswordChange = confirm('Do you want to change your password?')
     if (isPasswordChange === true) {
       let oldPassword = prompt('Please enter your old password:');
