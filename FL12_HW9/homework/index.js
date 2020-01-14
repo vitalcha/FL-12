@@ -102,13 +102,15 @@ console.log(substitute([58, 14, 48, 2, 31, 29]));
 
 //task 9
 const date = new Date(2019, 0, 2);
-function getPastDay(date, day) {
-    return date.setDate(date.getDate() - day);
+function getPastDay(date, dayCount) {
+  let copyDate = new Date(date);
+  return copyDate.getDate(copyDate.setDate(copyDate.getDate() - dayCount));
 }
-console.log(getPastDay(date, 1));
+console.log(getPastDay(date, 2));
 
 //task 10
 function formatDate(date) {
     return `${date.getFullYear()}/${date.getMonth() + 1}/${date.getDate()} ${date.getHours()}:${date.getMinutes()}`;
 }
 console.log(formatDate(new Date('6/15/2018 09:15:00')));
+
