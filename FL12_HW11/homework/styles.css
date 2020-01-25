@@ -1,0 +1,29 @@
+/* Todo: your styles go here*/
+#root{
+  max-width: 30%;
+  margin: 200px auto;
+}
+ul{
+  list-style-type: none;
+}
+.caret {
+  cursor: pointer; 
+  user-select: none;
+}
+.nested {
+  display: none;
+}
+.active {
+  display: block;
+}
+.material-icons{
+  color:orange;
+  vertical-align: bottom;  
+}
+.icons_file{
+  color:grey;
+}
+.italicStyle{
+  font-style: italic;
+  font-weight: lighter;
+}
