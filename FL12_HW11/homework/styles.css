@@ -1,29 +1,41 @@
-/* Todo: your styles go here*/
-#root{
-  max-width: 30%;
-  margin: 200px auto;
+#root {
+  cursor: pointer;
+  max-width: 100%;
+  margin: auto;
 }
-ul{
-  list-style-type: none;
+ ul {
+  list-style: none;
 }
-.caret {
-  cursor: pointer; 
-  user-select: none;
+
+#root li .title:hover {
+  background-color: #eeeeee;
 }
-.nested {
-  display: none;
+
+.empty-message {
+font-style: italic;
+margin: 0;
 }
-.active {
-  display: block;
+
+.material-icons {
+  color: #bbb;
+  vertical-align: bottom;
+  font-size: 1.2em;
 }
-.material-icons{
-  color:orange;
-  vertical-align: bottom;  
+
+.material-icons.folder {
+  color: rgb(252, 177, 38);
 }
-.icons_file{
-  color:grey;
+
+.material-icons.file {
+  color:gray;
 }
-.italicStyle{
-  font-style: italic;
-  font-weight: lighter;
+
+.folder > ul,
+.folder > p {
+display: none;
+} 
+
+.open > ul,
+.open > p {
+display: block;
 }
